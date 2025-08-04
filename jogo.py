@@ -17,15 +17,28 @@ nivel = int(input("Escola um nivel"))
 
 if(nivel ==1):
     print(" iiii nao ta com nada frango 🤣")
-    totalTentativas = 20
+    totalTentativas = 30
 elif (nivel == 2):
     print(" eee ta melhor meu amigo 🫡👍")
-    totalTentativas = 10
+    totalTentativas = 20
 elif(nivel == 3):
-    print(" voce ta com coram em 🫣🥶")
-    totalTentativas = 30
-
-
+    print(" voce ta com coragem em 🫣🥶")
+    totalTentativas = 10 
+    
+    
+for rodada in range (1,totalTentartivas +1):
+    print("Tentativa {} de {}". format(rodada,totalTentativas))
+    chute_str = input("Digite um número entre 1 a 100: ")
+    chute = int(chute_str)
+    
+    if(chute <1 or > 100):
+        print("Número invalido")
+        continue
+    
+    acertou = chute == numeroSecreto
+    maior = chute > numeroSecreto
+    menor = chute < numeroSecreto
+        
 
 
 
